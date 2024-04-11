@@ -2,17 +2,26 @@ import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
 
 const typeDefs = `#graphql
-  type Country {
+  type Toures {
     name: String,
     flag: String
   }
 
+  type Rooms {
+    thumbnail: String,
+    available: Boolean,
+    title: String,
+    price: String,
+  }
+
   type Query {
-    countries: [Country]
+    toures: [Toures],
+    locations: [String],
+    rooms: [Rooms]
   }
 `;
 
-export const countries = [
+export const toures = [
   {
     name: 'Brazil',
     flag: 'https://ibb.co/8N3Lfhn'
@@ -35,9 +44,88 @@ export const countries = [
   },
 ];
 
+const rooms = [
+  {
+    thumbnail: 'https://ibb.co/PWpkQ6Z',
+    available: true,
+    title: 'The Royal Room',
+    price: '₦190,000',
+  },
+  {
+    thumbnail: 'https://ibb.co/GsKgmpL',
+    available: true,
+    title: 'The Royal Room',
+    price: '₦195,000',
+  },
+  {
+    thumbnail: 'https://ibb.co/sbX7mQF',
+    available: true,
+    title: 'The Royal Room',
+    price: '₦200,000',
+  },
+  {
+    thumbnail: 'https://ibb.co/GsKgmpL',
+    available: true,
+    title: 'The Royal Room',
+    price: '₦180,000',
+  },
+  {
+    thumbnail: 'https://ibb.co/GsKgmpL',
+    available: true,
+    title: 'The Royal Room',
+    price: '₦195,000',
+  },
+  {
+    thumbnail: 'https://ibb.co/sbX7mQF',
+    available: true,
+    title: 'The Royal Room',
+    price: '₦200,000',
+  },
+  {
+    thumbnail: 'https://ibb.co/PWpkQ6Z',
+    available: true,
+    title: 'The Royal Room',
+    price: '₦190,000',
+  },
+  {
+    thumbnail: 'https://ibb.co/GsKgmpL',
+    available: true,
+    title: 'The Royal Room',
+    price: '₦195,000',
+  },
+  {
+    thumbnail: 'https://ibb.co/sbX7mQF',
+    available: true,
+    title: 'The Royal Room',
+    price: '₦200,000',
+  },
+  {
+    thumbnail: 'https://ibb.co/GsKgmpL',
+    available: true,
+    title: 'The Royal Room',
+    price: '₦180,000',
+  },
+  {
+    thumbnail: 'https://ibb.co/GsKgmpL',
+    available: true,
+    title: 'The Royal Room',
+    price: '₦195,000',
+  },
+  {
+    thumbnail: 'https://ibb.co/sbX7mQF',
+    available: true,
+    title: 'The Royal Room',
+    price: '₦200,000',
+  },
+];
+
 const resolvers = {
   Query: {
-    countries: () => countries,
+    toures: () => toures,
+    rooms: () => rooms,
+    locations: () => {
+      return toures.map((toure) => toure.name);
+    }
   },
 };
 
