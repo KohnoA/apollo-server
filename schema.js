@@ -10,10 +10,14 @@ export const typeDefs = `#graphql
     available: Boolean!,
     title: String!,
     price: String!,
+    review: Int!,
+    desc: String!,
+    preview: [String!]!,
   }
 
   type Info {
     count: Int,
+    next: Boolean!,
   }
 
   type RoomsReturn {
@@ -28,7 +32,8 @@ export const typeDefs = `#graphql
 
   type Query {
     locations: [String!]!,
-    toures(offset: Int, limit: Int): ToureReturn,
-    rooms(offset: Int, limit: Int): RoomsReturn,
+    toures(offset: Int, limit: Int): ToureReturn!,
+    rooms(offset: Int, limit: Int): RoomsReturn!,
+    room(id: Int!): Rooms,
   }
 `;
