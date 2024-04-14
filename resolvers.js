@@ -10,7 +10,7 @@ export const resolvers = {
       return {
         info: {
           next: isEnd,
-          count: items.length || null,
+          count: items.length ? rooms.length : null,
         },
         items,
       };

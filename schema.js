@@ -1,7 +1,10 @@
 export const typeDefs = `#graphql
   type Toures {
-    name: String,
-    flag: String
+    currency: String!,
+    name: String!,
+    flag: String!,
+    language: String!,
+    toure: String!, 
   }
 
   type Rooms {
