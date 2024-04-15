@@ -1,5 +1,6 @@
 export const typeDefs = `#graphql
   type Toures {
+    id: Int!,
     currency: String!,
     name: String!,
     flag: String!,
@@ -35,7 +36,7 @@ export const typeDefs = `#graphql
 
   type Query {
     locations: [String!]!,
-    toures(offset: Int, limit: Int): ToureReturn!,
+    toures(offset: Int, limit: Int, filter: String): ToureReturn!,
     rooms(offset: Int, limit: Int): RoomsReturn!,
     room(id: Int!): Rooms,
   }

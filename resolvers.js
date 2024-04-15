@@ -3,14 +3,19 @@ import { pagination } from './helpers.js';
 
 export const resolvers = {
   Query: {
-    toures: (_, { offset, limit }) => {
-      const items = pagination(toures, offset, limit);
-      const isEnd = offset + limit < rooms.length;
+    toures: (_, { offset, limit, filter }) => {
+      const filteredToures = filter
+        ? toures.filter((toure) =>
+            toure.name.toLowerCase().startsWith(filter.toLowerCase())
+          )
+        : toures;
+      const items = pagination(filteredToures, offset, limit);
+      const isEnd = offset + limit < filteredToures.length;
 
       return {
         info: {
           next: isEnd,
-          count: items.length ? rooms.length : null,
+          count: items?.length ? toures.length : null,
         },
         items,
       };
@@ -22,9 +27,9 @@ export const resolvers = {
       return {
         info: {
           next: isEnd,
-          count: items.length ? rooms.length : null,
+          count: items.length || null,
         },
-        items
+        items,
       };
     },
     room: (_, { id }) => {
@@ -34,6 +39,6 @@ export const resolvers = {
     },
     locations: () => {
       return toures.map((toure) => toure.name);
-    }
+    },
   },
 };

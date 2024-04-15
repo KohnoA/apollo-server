@@ -1,5 +1,6 @@
 export const toures = [
   {
+    id: 1,
     currency: 'BRL',
     name: 'Brazil',
     flag: 'https://i.ibb.co/w0McCzG/1200px-Flag-of-Brazil-svg.png',
@@ -7,6 +8,7 @@ export const toures = [
     toure: 'Tour of Brazil', 
   },
   {
+    id: 2,
     currency: 'BYN',
     name: 'Belarus',
     flag: 'https://i.ibb.co/7CcdJcV/Flag-of-Belarus-svg.png',
@@ -14,6 +16,7 @@ export const toures = [
     toure: 'Tour of Belarus', 
   },
   {
+    id: 3,
     currency: 'AED',
     name: 'United Arab Emirates',
     flag: 'https://i.ibb.co/bKRLZX4/Flag-of-the-United-Arab-Emirates-svg.png',
@@ -21,6 +24,7 @@ export const toures = [
     toure: 'Tour of United Arab Emirates', 
   },
   {
+    id: 4,
     currency: 'AMD',
     name: 'Armenia',
     flag: 'https://i.ibb.co/bBX3HV0/Flag-of-Armenia-svg.png',
@@ -28,6 +32,7 @@ export const toures = [
     toure: 'Tour of Armenia', 
   },
   {
+    id: 5,
     currency: 'ARS',
     name: 'Argentina',
     flag: 'https://i.ibb.co/JmTht3y/Flag-of-Argentina-svg.png',
@@ -35,6 +40,7 @@ export const toures = [
     toure: 'Tour of Argentina', 
   },
   {
+    id: 6,
     currency: 'EUR',
     name: 'Austria',
     flag: 'https://i.ibb.co/f9t8myX/Flag-of-Austria-svg.png',
@@ -42,6 +48,7 @@ export const toures = [
     toure: 'Tour of Austria', 
   },
   {
+    id: 7,
     currency: 'CAD',
     name: 'Canada',
     flag: 'https://i.ibb.co/dMXRz8F/istockphoto-1414559861-612x612.jpg',
@@ -49,6 +56,7 @@ export const toures = [
     toure: 'Tour of Canada', 
   },
   {
+    id: 8,
     currency: 'EUR',
     name: 'Cyprus',
     flag: 'https://i.ibb.co/y4Cs4B4/Cyprus-flag-300.png',
@@ -56,6 +64,7 @@ export const toures = [
     toure: 'Tour of Cyprus', 
   },
   {
+    id: 9,
     currency: 'EUR',
     name: 'Germany',
     flag: 'https://i.ibb.co/7VvVpv4/Flag-of-Germany-svg.png',
@@ -63,6 +72,7 @@ export const toures = [
     toure: 'Tour of Germany', 
   },
   {
+    id: 10,
     currency: 'EUR',
     name: 'Estonia',
     flag: 'https://i.ibb.co/ssstWMm/Flag-of-Estonia-svg.png',
@@ -70,6 +80,7 @@ export const toures = [
     toure: 'Tour of Estonia', 
   },
   {
+    id: 11,
     currency: 'EUR',
     name: 'Finland',
     flag: 'https://i.ibb.co/phPkWMp/Flag-of-Finland-svg.png',
@@ -77,6 +88,7 @@ export const toures = [
     toure: 'Tour of Finland', 
   },
   {
+    id: 12,
     currency: 'EUR',
     name: 'France',
     flag: 'https://i.ibb.co/GCSSJ5s/Flag-of-France-svg.png',
@@ -84,6 +96,7 @@ export const toures = [
     toure: 'Tour of France', 
   },
   {
+    id: 13,
     currency: 'GEL',
     name: 'Georgia',
     flag: 'https://i.ibb.co/j5gF4C5/Flag-of-Georgia-svg.png',
@@ -91,6 +104,7 @@ export const toures = [
     toure: 'Tour of Georgia', 
   },
   {
+    id: 14,
     currency: 'EUR',
     name: 'Italy',
     flag: 'https://i.ibb.co/cQYVxgs/Flag-of-Italy-svg.png',
@@ -98,6 +112,7 @@ export const toures = [
     toure: 'Tour of Italy', 
   },
   {
+    id: 15,
     currency: 'KZT',
     name: 'Kazakhstan',
     flag: 'https://i.ibb.co/dKHtLY2/Flag-of-Kazakhstan-svg.png',
@@ -105,6 +120,7 @@ export const toures = [
     toure: 'Tour of Kazakhstan', 
   },
   {
+    id: 16,
     currency: 'EUR',
     name: 'Lithuania',
     flag: 'https://i.ibb.co/GcV1VC8/Flag-of-Lithuania-svg.png',
@@ -112,6 +128,7 @@ export const toures = [
     toure: 'Tour of Lithuania', 
   },
   {
+    id: 17,
     currency: 'EUR',
     name: 'Latvia',
     flag: 'https://i.ibb.co/LkjmBr6/Flag-of-Latvia-svg.png',
@@ -119,6 +136,7 @@ export const toures = [
     toure: 'Tour of Latvia', 
   },
   {
+    id: 18,
     currency: 'MDL',
     name: 'Moldova',
     flag: 'https://i.ibb.co/ZKPJ8XY/Flag-of-Moldova-svg.png',
@@ -126,6 +144,7 @@ export const toures = [
     toure: 'Tour of Moldova', 
   },
   {
+    id: 19,
     currency: 'PLN',
     name: 'Poland',
     flag: 'https://i.ibb.co/c6nKp0M/Flag-of-Poland-svg-1.webp',
@@ -133,6 +152,7 @@ export const toures = [
     toure: 'Tour of Poland', 
   },
   {
+    id: 20,
     currency: 'RSD',
     name: 'Serbia',
     flag: 'https://i.ibb.co/7JrJsPZ/Flag-of-Serbia-svg.png',
@@ -140,6 +160,7 @@ export const toures = [
     toure: 'Tour of Serbia', 
   },
   {
+    id: 21,
     currency: 'SEK',
     name: 'Sweden',
     flag: 'https://i.ibb.co/x5YkrbV/Flag-of-Sweden-svg.webp',
