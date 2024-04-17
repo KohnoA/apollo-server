@@ -1,5 +1,5 @@
 import { ApolloServer } from '@apollo/server';
-import { startStandaloneServer } from '@apollo/server/standalone';
+import { startServerAndCreateNextHandler } from "@as-integrations/next";
 
 import { typeDefs } from './schema.js';
 import { resolvers } from './resolvers.js';
@@ -11,8 +11,8 @@ const server = new ApolloServer({
   introspection: true,
 });
 
-const { url } = await startStandaloneServer(server, {
-  listen: { port: 4001 },
+const handler = startServerAndCreateNextHandler(server, {
+  context: async req => ({ req }),
 });
 
-console.log(`🚀  Server ready at: ${url}`);
+export { handler as GET, handler as POST };
